@@ -944,10 +944,10 @@ class BusinessShipment extends Version {
 			'trace' => 1
 		);
 
-		$this->log($auth_params);
+		//$this->log($auth_params);
 		$this->setSoapClient(new SoapClient($this->getAPIUrl(), $auth_params));
 		$this->getSoapClient()->__setSoapHeaders($header);
-		$this->log($this->getSoapClient());
+		//$this->log($this->getSoapClient());
 	}
 
 	/**
